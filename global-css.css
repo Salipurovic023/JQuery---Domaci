@@ -1,0 +1,19 @@
+table,tr,th{
+    border: 1px solid black;
+}
+th{
+    padding: 10px 50px 10px 10px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+#tabela{
+    margin-left: 100px;
+    margin-top: 25px;
+}
+#forma{
+    margin-left: 350px;
+    visibility: hidden;
+}
+input{
+    width: 320px !important;
+}

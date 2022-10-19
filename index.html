@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JQuery - Domaci</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="global-css.css">
+</head>
+
+<body>
+    <div id="tabela">
+        <table>
+            <tr>
+                <th style="font-weight: bold;">Ime</th>
+                <th style="font-weight: bold;">Prezime</th>
+                <th style="font-weight: bold;">E-mail</th>
+            </tr>
+            <tr id="osoba1">
+                <th onclick="Promena()">Milan</th>
+                <th onclick="Promena()">Milanovic</th>
+                <th onclick="Promena()">mil.mal@yahoo.com</th>
+                <th style="font-weight: bold; color: lightgrey;" onclick="deleteRow()">X</th>
+            </tr>
+            <tr id="osoba2">
+                <th onclick="Promena()">Spaso</th>
+                <th onclick="Promena()">Spasojevic</th>
+                <th onclick="Promena()">spale@gmail.com</th>
+                <th style="font-weight: bold; color: lightgrey;" onclick="deleteRow()">X</th>
+            </tr>
+            <tr id="osoba3">
+                <th onclick="Promena()">Jovana</th>
+                <th onclick="Promena()">Lukic</th>
+                <th onclick="Promena()">jluk95@yahoo.com</th>
+                <th style="font-weight: bold; color: lightgrey;" onclick="deleteRow()">X</th>
+            </tr>
+        </table><br>
+        <button type="button" class="btn btn-secondary" onclick="Dodaj()">Dodavanje novog zaposlenog</button>
+    </div>
+    <div id="forma">
+        <label for="ime" class="form-label">Ime</label><br>
+        <input type="text" class="form-control" id="ime" placeholder="Ime"><br>
+        <label for="prezime" class="form-label">Prezime</label><br>
+        <input type="text" class="form-control" id="prezime" placeholder="Prezime"><br>
+        <label for="email" class="form-label">E-mail</label><br>
+        <input type="text" class="form-control" id="email" placeholder="E-mail"><br>
+        <button type="button" class="btn btn-secondary" onclick="Ubacivanje()">Zavrsi</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="globalJS.js"></script>
+</body>
+
+</html>
